@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.github.tacigar.qalendar.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewPreviousMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickPrevMonth"
+            android:clickable="true"
+            android:text="Prev" />
+
+        <TextView
+            android:id="@+id/textViewCurrentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/textViewNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickNextMonth"
+            android:clickable="true"
+            android:text="Next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView style="@style/DayOfTheWeek" android:text="@string/sunday" />
+            <TextView style="@style/DayOfTheWeek" android:text="@string/monday" />
+            <TextView style="@style/DayOfTheWeek" android:text="@string/tuesday" />
+            <TextView style="@style/DayOfTheWeek" android:text="@string/wednesday" />
+            <TextView style="@style/DayOfTheWeek" android:text="@string/thursday" />
+            <TextView style="@style/DayOfTheWeek" android:text="@string/friday" />
+            <TextView style="@style/DayOfTheWeek" android:text="@string/saturday" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView style="@style/Day" android:id="@+id/textViewDay0" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay1" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay2" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay3" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay4" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay5" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView style="@style/Day" android:id="@+id/textViewDay7" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay8" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay9" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay10" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay11" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay12" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView style="@style/Day" android:id="@+id/textViewDay14" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay15" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay16" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay17" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay18" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay19" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView style="@style/Day" android:id="@+id/textViewDay21" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay22" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay23" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay24" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay25" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay26" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay27" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView style="@style/Day" android:id="@+id/textViewDay28" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay29" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay30" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay31" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay32" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay33" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay34" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView style="@style/Day" android:id="@+id/textViewDay35" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay36" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay37" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay38" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay39" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay40" />
+            <TextView style="@style/Day" android:id="@+id/textViewDay41" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
